@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>HTML5 Back Office | Template</title>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+	</head>
+	
+	<body>
+	
+		
+		<header>
+			<div id="primary-tools" class="wrapper">
+				<p>Welcome, <a href="#">Tyson Willey</a></p>
+				
+				<ul>
+					<li class="date">Jul. 15, 2011</li>
+					<li><a href="#">User Administration</a></li>
+					<li><a href="#">My Profile</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div> <!-- /primary-tools -->
+				
+			<nav class="clear-fix">
+				<div class="wrapper">
+					<a id="logo" href="#">Inmark</a>
+					
+					<ul>
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li class="drop-down">
+							<a href="dataset.html">Reference <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">CF Reference</a></li>
+								<li><a href="dataset.html">Authorize.NET CIM Guide</a></li>
+								<li><a href="dataset.html">Caxiam Wiki</a></li>
+								<li><a href="dataset.html">Endicia Docs</a></li>
+								<li><a href="dataset.html">USPS Rate API</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Tools <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Authorize.Net Vault</a></li>
+								<li><a href="dataset.html">CF Admin</a></li>
+								<li><a href="dataset.html">Marshall Tomcat</a></li>
+								<li><a href="dataset.html">phpMyAdmin</a></li>
+								<li><a href="dataset.html">Jenkins</a></li>
+								<li><a href="dataset.html">RegExr</a></li>
+								<li><a href="dataset.html">Restarter</a></li>
+								<li><a href="dataset.html">CFC Generator</a></li>
+								<li><a href="dataset.html">VHost Directory</a></li>
+								<li><a href="dataset.html">Axis 3 CF Administrator</a></li>
+								<li><a href="dataset.html">DS VHosts</a></li>
+								<li><a href="dataset.html">GUID Creator</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Blogs <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Signal vs. Noise</a></li>
+								<li><a href="dataset.html">David Heinemeier Hansson</a></li>
+								<li><a href="dataset.html">Gary Vaynerchuk</a></li>
+								<li><a href="dataset.html">Tim Ferriss</a></li>
+								<li><a href="dataset.html">Tim Ferriss - Posturous</a></li>
+								<li><a href="dataset.html">Design Cookbook</a></li>
+								<li><a href="dataset.html">Ryan Singer</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Long Item Title to test expansion <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Test Item 1</a></li>
+								<li><a href="dataset.html">Test Item 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="dataset.html">No Dropdown</a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+		</header>
+		
+		
+		
+		<div id="main-container" class="clear-fix">
+		
+			<div class="wrapper">
+				
+				<div class="body">			
+				
+						
+						<hgroup>
+							<h1>Edit Employee</h1>
+						</hgroup>
+						
+						<form class="standard-form" id="form" action="#" method="post">
+							
+							<fieldset>
+								<legend>Basic Information</legend>
+							
+								<ul>
+									<li>
+										<label for="firstname">First Name</label>
+										<input type="text" name="firstname" id="firstname" />
+									</li>
+									
+									<li>
+										<label for="lastname">Last Name</label>
+										<input type="text" name="lastname" id="lastname" />
+									</li>
+									
+									<li>
+										<label for="phone">Phone Number</label>
+										<input type="tel" name="phone" id="phone" required  />
+									</li>
+									
+									<li>
+										<label for="email">Email Address</label>
+										<input type="email" name="email" id="email" />
+									</li>
+									
+									<li>
+										<label>Active?</label>
+									
+										<select name="active">
+											<option>Yes</option>
+											<option>No</option>
+										</select>
+									</li>
+								</ul>
+							</fieldset>
+							
+							<fieldset class="collapsed">
+								<legend>Mailing Address</legend>
+							
+								<ul>
+									<li>
+										<label for="address">Street Address</label>
+										<input type="text" name="address" id="address" />
+									</li>
+									
+									<li>
+										<label for="aprt">Apartment / Suite #</label>
+										<input type="text" name="aprt" id="aprt" />
+									</li>
+									
+									<li>
+										<label for="city">City</label>
+										<input type="text" name="city" id="city" />
+									</li>
+									
+									<li>
+										<label for="state">State</label>
+										
+										<select name="state" id="state_dd">
+											<option value="AL">Alabama</option>
+											<option value="AK">Alaska</option>
+											<option value="AZ">Arizona</option>
+											<option value="AR">Arkansas</option>
+											<option value="CA">California</option>
+											<option value="CO">Colorado</option>
+											<option value="CT">Connecticut</option>
+											<option value="DE">Delaware</option>
+											<option value="DC">District of Columbia</option>
+											<option value="FL">Florida</option>
+											<option value="GA">Georgia</option>
+											<option value="HI">Hawaii</option>
+											<option value="ID">Idaho</option>
+											<option value="IL">Illinois</option>
+											<option value="IN">Indiana</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+											<option value="LA">Louisiana</option>
+											<option value="ME">Maine</option>
+											<option value="MD">Maryland</option>
+											<option value="MA">Massachusetts</option>
+											<option value="MI">Michigan</option>
+											<option value="MN">Minnesota</option>
+											<option value="MS">Mississippi</option>
+											<option value="MO">Missouri</option>
+											<option value="MT">Montana</option>
+											<option value="NE">Nebraska</option>
+											<option value="NV">Nevada</option>
+											<option value="NH">New Hampshire</option>
+											<option value="NJ">New Jersey</option>
+											<option value="NM">New Mexico</option>
+											<option value="NY">New York</option>
+											<option value="NC">North Carolina</option>
+											<option value="ND">North Dakota</option>
+											<option value="OH">Ohio</option>
+											<option value="OK">Oklahoma</option>
+											<option value="OR">Oregon</option>
+											<option value="PA">Pennsylvania</option>
+											<option value="RI">Rhode Island</option>
+											<option value="SC">South Carolina</option>
+											<option value="SD">South Dakota</option>
+											<option value="TN">Tennessee</option>
+											<option value="TX">Texas</option>
+											<option value="UT">Utah</option>
+											<option value="VT">Vermont</option>
+											<option value="VA">Virginia</option>
+											<option value="WA">Washington</option>
+											<option value="WV">West Virginia</option>
+											<option value="WI">Wisconsin</option>
+											<option value="WY">Wyoming</option>
+										</select>									
+									</li>
+									
+									<li>
+										<label for="zipcode">Zipcode</label>
+										<input class="small" type="text" name="zipcode" id="zipcode" />
+									</li>									
+									
+								</ul>
+							</fieldset>
+							
+							<fieldset class="collapsed">
+								<legend>Billing Address</legend>
+							
+								<ul>
+									<li>
+										<label for="address">Street Address</label>
+										<input type="text" name="address" id="address" />
+									</li>
+									
+									<li>
+										<label for="aprt">Apartment / Suite #</label>
+										<input type="text" name="aprt" id="aprt" />
+									</li>
+									
+									<li>
+										<label for="city">City</label>
+										<input type="text" name="city" id="city" />
+									</li>
+									
+									<li>
+										<label for="state">State</label>
+										
+										<select name="state" id="state_dd">
+											<option value="AL">Alabama</option>
+											<option value="AK">Alaska</option>
+											<option value="AZ">Arizona</option>
+											<option value="AR">Arkansas</option>
+											<option value="CA">California</option>
+											<option value="CO">Colorado</option>
+											<option value="CT">Connecticut</option>
+											<option value="DE">Delaware</option>
+											<option value="DC">District of Columbia</option>
+											<option value="FL">Florida</option>
+											<option value="GA">Georgia</option>
+											<option value="HI">Hawaii</option>
+											<option value="ID">Idaho</option>
+											<option value="IL">Illinois</option>
+											<option value="IN">Indiana</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+											<option value="LA">Louisiana</option>
+											<option value="ME">Maine</option>
+											<option value="MD">Maryland</option>
+											<option value="MA">Massachusetts</option>
+											<option value="MI">Michigan</option>
+											<option value="MN">Minnesota</option>
+											<option value="MS">Mississippi</option>
+											<option value="MO">Missouri</option>
+											<option value="MT">Montana</option>
+											<option value="NE">Nebraska</option>
+											<option value="NV">Nevada</option>
+											<option value="NH">New Hampshire</option>
+											<option value="NJ">New Jersey</option>
+											<option value="NM">New Mexico</option>
+											<option value="NY">New York</option>
+											<option value="NC">North Carolina</option>
+											<option value="ND">North Dakota</option>
+											<option value="OH">Ohio</option>
+											<option value="OK">Oklahoma</option>
+											<option value="OR">Oregon</option>
+											<option value="PA">Pennsylvania</option>
+											<option value="RI">Rhode Island</option>
+											<option value="SC">South Carolina</option>
+											<option value="SD">South Dakota</option>
+											<option value="TN">Tennessee</option>
+											<option value="TX">Texas</option>
+											<option value="UT">Utah</option>
+											<option value="VT">Vermont</option>
+											<option value="VA">Virginia</option>
+											<option value="WA">Washington</option>
+											<option value="WV">West Virginia</option>
+											<option value="WI">Wisconsin</option>
+											<option value="WY">Wyoming</option>
+										</select>									
+									</li>
+									
+									<li>
+										<label for="zipcode">Zipcode</label>
+										<input class="small" type="text" name="zipcode" id="zipcode" />
+									</li>									
+									
+								</ul>
+							</fieldset>
+							
+							<fieldset class="collapsed">
+								<legend>Departments</legend>
+								
+								<ul>
+									<li class="checkboxes two-cols">
+										<label><input type="checkbox" name="department" value="test1" /> Department 1</label>
+										<label><input type="checkbox" name="department" value="test2" /> Department 2</label>
+										<label><input type="checkbox" name="department" value="test3" /> Department 3</label>
+										<label><input type="checkbox" name="department" value="test4" /> Department 4</label>
+										<label><input type="checkbox" name="department" value="test5" /> Department 5</label>
+										<label><input type="checkbox" name="department" value="test1" /> Department 6</label>
+										<label><input type="checkbox" name="department" value="test2" /> Department 7</label>
+										<label><input type="checkbox" name="department" value="test3" /> Department 8</label>
+										<label><input type="checkbox" name="department" value="test4" /> Department 9</label>
+									</li>
+								</ul>
+								
+							</fieldset>
+							
+							<div class="form-controls">
+								<button type="submit" class="save-button">Save</button>
+							</div>
+						</form>
+						
+					</div>
+			</div>
+		
+		</div> <!-- /main-container -->
+		
+		<div id="footer">
+			<div class="wrapper">
+				<p>Back Office v.6.0</p>
+				<p>Copyright &copy; 2011 <a href="http://www.caxiamgroup.com/">Caxiam Group, Inc.</a>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.customdropdown.js"></script>
+		<script type="text/javascript" src="javascript/jquery.dataset.js"></script>
+		
+		<script type="text/javascript">
+			(function ($) {
+				$("select").customDropDown({maxHeight: 200});
+
+				$("legend")
+					.bind("click", function (){
+						$(this).siblings().slideToggle("fast");
+						$(this).parent().toggleClass("collapsed");
+					})
+					.attr("tabindex", "0");
+				
+				$("fieldset.collapsed").find("legend").siblings().hide();
+				
+				$(".checkboxes").find(":checkbox").bind("change", function (){
+					if (this.checked){
+						$(this).parent().addClass("checked");
+					} else {
+						$(this).parent().removeClass("checked");
+					}
+				});
+			})(jQuery);			
+		</script>
+		
+	</body>
+
+</html>

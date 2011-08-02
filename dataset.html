@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>HTML5 Back Office | Template</title>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+	</head>
+	
+	<body>
+		
+		<header>
+			<div id="primary-tools" class="wrapper">
+				<p>Welcome, <a href="#">Tyson Willey</a></p>
+				
+				<ul>
+					<li class="date">Jul. 15, 2011</li>
+					<li><a href="#">User Administration</a></li>
+					<li><a href="#">My Profile</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div> <!-- /primary-tools -->
+				
+			<nav class="clear-fix">
+				<div class="wrapper">
+					<a id="logo" href="#">Inmark</a>
+					
+					<ul>
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li class="drop-down">
+							<a href="dataset.html">Reference <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">CF Reference</a></li>
+								<li><a href="dataset.html">Authorize.NET CIM Guide</a></li>
+								<li><a href="dataset.html">Caxiam Wiki</a></li>
+								<li><a href="dataset.html">Endicia Docs</a></li>
+								<li><a href="dataset.html">USPS Rate API</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Tools <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Authorize.Net Vault</a></li>
+								<li><a href="dataset.html">CF Admin</a></li>
+								<li><a href="dataset.html">Marshall Tomcat</a></li>
+								<li><a href="dataset.html">phpMyAdmin</a></li>
+								<li><a href="dataset.html">Jenkins</a></li>
+								<li><a href="dataset.html">RegExr</a></li>
+								<li><a href="dataset.html">Restarter</a></li>
+								<li><a href="dataset.html">CFC Generator</a></li>
+								<li><a href="dataset.html">VHost Directory</a></li>
+								<li><a href="dataset.html">Axis 3 CF Administrator</a></li>
+								<li><a href="dataset.html">DS VHosts</a></li>
+								<li><a href="dataset.html">GUID Creator</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Blogs <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Signal vs. Noise</a></li>
+								<li><a href="dataset.html">David Heinemeier Hansson</a></li>
+								<li><a href="dataset.html">Gary Vaynerchuk</a></li>
+								<li><a href="dataset.html">Tim Ferriss</a></li>
+								<li><a href="dataset.html">Tim Ferriss - Posturous</a></li>
+								<li><a href="dataset.html">Design Cookbook</a></li>
+								<li><a href="dataset.html">Ryan Singer</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="dataset.html">Long Item Title to test expansion <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="dataset.html">Test Item 1</a></li>
+								<li><a href="dataset.html">Test Item 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="dataset.html">No Dropdown</a>
+						</li>
+					</ul>
+					
+					
+					
+					<!--
+					<ul>
+						<li><a href="#">Dashboard</a></li>
+						<li class="drop-down">
+							<a href="#">Customer Requests <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="#">Customer Applications</a></li>
+								<li><a href="#">Product Samples</a></li>
+								<li><a href="#">Price Quotes</a></li>
+								<li><a href="#">Service Quotes</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Customer Management</a></li>
+						<li class="drop-down">
+							<a href="#">Forum <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="#">Forums Home</a></li>
+								<li><a href="#">Categories</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="#">Knowledge Base <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="#">All Articles</a></li>
+								<li><a href="#">Topics</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="#">FAQs <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Categories</a></li>
+							</ul>
+						</li>
+						<li class="drop-down">
+							<a href="#">Useful Links <span class="arrow">+</span></a>
+							<ul>
+								<li><a href="#">Links</a></li>
+								<li><a href="#">Categories</a></li>
+							</ul>
+						</li>
+					</ul>
+					-->
+				</div>
+			</nav>
+		</header>
+		
+		
+		
+		<div id="main-container" class="no-sidebar clear-fix">
+		
+			<div class="wrapper body">
+			
+				<a class="add-button float-right" href="#">Add an Employee +</a>
+			
+				<hgroup>
+					<h1>Employees</h1>
+					<p>54 Employees Found</p>
+				</hgroup>
+				
+				<div class="dataset-controls clear-fix">
+					<form id="search" action="" method="post">					
+						<input type="text" id="search-term" name="search-term" placeholder="Search" />
+						<label>
+							by
+							<select name="search-field">
+								<option>Name</option>
+								<option>Address</option>
+								<option>Phone</option>
+								<option>Status</option>
+							</select>
+						</label>
+						<button type="submit" id="search-submit">Go</button>
+					</form>
+					
+					<ul class="control-group">
+						<li id="group-edit-button"><a href="#">Group Edit</a></li>
+						<li id="delete-button"><a href="#">Delete</a></li>
+					</ul>
+					
+					<div class="pagination">
+						<p><strong>51 - 54</strong> of <strong>54</strong></p>
+						<ul class="control-group">
+							<li class="previous"><a href="#"><span class="arrow">Previous</span></a></li>
+							<li class="next disabled"><span class="arrow">Next</span></li>
+						</ul>
+					</div>
+				</div> <!-- /dataset-controls -->
+				
+				
+				<table class="dataset">
+					<thead>
+						<tr>
+							<th id="select-all-col" class="center-align"><input type="checkbox" name="select-all" class="select-all" /></th>
+							<th><a href="#" class="sort asc active">Name <span class="arrow">-</span></a></th>
+							<th><a href="#" class="sort asc">Address <span class="arrow">-</span></a></th>
+							<th><a href="#" class="sort asc">Phone <span class="arrow">-</span></a></th>
+							<th class="right-align"><a href="#" class="sort asc"><span class="arrow">-</span> Sales</a></th>
+							<th><a href="#" class="sort asc">Status <span class="arrow">-</span></a></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="center-align"><input type="checkbox" name="select-itemid" class="select" value="itemid" /></td>
+							<td><a href="#">Willey, Tyson</a></td>
+							<td>3960 Lancashire Ln, Longwood, FL 32779</td>
+							<td>(407) 267-4448</td>
+							<td class="right-align">$131,313.13</td>
+							<td>Active</td>
+						</tr>
+						
+						<tr>
+							<td class="center-align"><input type="checkbox" name="select-itemid" class="select" value="itemid" /></td>
+							<td><a href="#">Willey, Tyson</a></td>
+							<td>3960 Lancashire Ln, Longwood, FL 32779</td>
+							<td>(407) 267-4448</td>
+							<td class="right-align">$131,313.13</td>
+							<td>Active</td>
+						</tr>
+						
+						<tr>
+							<td class="center-align"><input type="checkbox" name="select-itemid" class="select" value="itemid" /></td>
+							<td><a href="#">Willey, Tyson</a></td>
+							<td>3960 Lancashire Ln, Longwood, FL 32779</td>
+							<td>(407) 267-4448</td>
+							<td class="right-align">$131,313.13</td>
+							<td>Active</td>
+						</tr>
+						
+						<tr>
+							<td class="center-align"><input type="checkbox" name="select-itemid" class="select" value="itemid" /></td>
+							<td><a href="#">Willey, Tyson</a></td>
+							<td>3960 Lancashire Ln, Longwood, FL 32779</td>
+							<td>(407) 267-4448</td>
+							<td class="right-align">$131,313.13</td>
+							<td>Active</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				<div class="dataset-controls clear-fix">
+					<div class="pagination">
+						<p><strong>51 - 54</strong> of <strong>54</strong></p>
+						<ul class="control-group">
+							<li class="previous"><a href="#"><span class="arrow">Previous</span></a></li>
+							<li class="next disabled"><span class="arrow">Next</span></li>
+						</ul>
+					</div>
+				</div> <!-- /dataset-controls -->
+				
+			</div>
+		
+		</div> <!-- /main-container -->
+		
+		<div id="footer">
+			<div class="wrapper">
+				<p>Back Office v.6.0</p>
+				<p>Copyright &copy; 2011 <a href="http://www.caxiamgroup.com/">Caxiam Group, Inc.</a>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.customdropdown.js"></script>
+		<script type="text/javascript" src="javascript/jquery.dataset.js"></script>
+		
+		<script type="text/javascript">
+			(function ($) {
+				$("select").customDropDown({});				
+				$(".dataset").dataset();
+			})(jQuery);			
+		</script>
+		
+		<!--
+		<div class="dropdown">
+			<div class="selected">Name</div>
+			<div class="options">
+				<ul>
+					<li><a href="#">Address</a></li>
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Status</a></li>
+				</ul>
+			</div>
+		</div>
+		-->
+		
+	</body>
+
+</html>

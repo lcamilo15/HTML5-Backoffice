@@ -450,7 +450,6 @@ header nav ul > li:hover > ul {
 }
 
 .right-bar .notes form {
-	display: none;
 	margin: 5px 0;
 }
 
@@ -806,12 +805,13 @@ input[type="email"]:focus {
 .dataset th .arrow {
 	display: inline-block;
 	height: 0;
-	margin: 0 5px;
-	overflow: -9999px;
+	margin: 0 5px; 	
 	text-align: left;
 	text-indent: -9999px;	
 	visibility: hidden;
 	width: 0;
+	
+	overflow: hidden;
 }
 
 .dataset th .active .arrow { visibility: visible; }

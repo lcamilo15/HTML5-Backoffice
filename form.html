@@ -151,29 +151,29 @@
 								<ul>
 									<li>
 										<label for="firstname">First Name</label>
-										<input type="text" name="firstname" id="firstname" />
+										<input type="text" name="firstname" id="firstname" value="Dwight" />
 									</li>
 									
 									<li>
 										<label for="lastname">Last Name</label>
-										<input type="text" name="lastname" id="lastname" />
+										<input type="text" name="lastname" id="lastname" value="Howard" />
 									</li>
 									
 									<li>
 										<label for="phone">Phone Number</label>
-										<input type="tel" name="phone" id="phone" required  />
+										<input type="tel" name="phone" id="phone" required value="(407) 916-2442" />
 									</li>
 									
 									<li>
 										<label for="email">Email Address</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email" value="dwight12@orlandomagic.com" />
 									</li>
 									
 									<li>
 										<label>Active?</label>
 									
 										<select name="active">
-											<option>Yes</option>
+											<option selected>Yes</option>
 											<option>No</option>
 										</select>
 									</li>
@@ -186,7 +186,7 @@
 								<ul>
 									<li>
 										<label for="address">Street Address</label>
-										<input type="text" name="address" id="address" />
+										<input type="text" name="address" id="address" value="8701 Maitland Summit Blvd." />
 									</li>
 									
 									<li>
@@ -196,7 +196,7 @@
 									
 									<li>
 										<label for="city">City</label>
-										<input type="text" name="city" id="city" />
+										<input type="text" name="city" id="city" value="Orlando" />
 									</li>
 									
 									<li>
@@ -212,7 +212,7 @@
 											<option value="CT">Connecticut</option>
 											<option value="DE">Delaware</option>
 											<option value="DC">District of Columbia</option>
-											<option value="FL">Florida</option>
+											<option value="FL" selected>Florida</option>
 											<option value="GA">Georgia</option>
 											<option value="HI">Hawaii</option>
 											<option value="ID">Idaho</option>
@@ -259,111 +259,27 @@
 									
 									<li>
 										<label for="zipcode">Zipcode</label>
-										<input class="small" type="text" name="zipcode" id="zipcode" />
+										<input class="small" type="text" name="zipcode" id="zipcode" value="32810" />
 									</li>									
 									
 								</ul>
 							</fieldset>
 							
-							<fieldset class="collapsed">
-								<legend>Billing Address</legend>
-							
-								<ul>
-									<li>
-										<label for="address">Street Address</label>
-										<input type="text" name="address" id="address" />
-									</li>
-									
-									<li>
-										<label for="aprt">Apartment / Suite #</label>
-										<input type="text" name="aprt" id="aprt" />
-									</li>
-									
-									<li>
-										<label for="city">City</label>
-										<input type="text" name="city" id="city" />
-									</li>
-									
-									<li>
-										<label for="state">State</label>
-										
-										<select name="state" id="state_dd">
-											<option value="AL">Alabama</option>
-											<option value="AK">Alaska</option>
-											<option value="AZ">Arizona</option>
-											<option value="AR">Arkansas</option>
-											<option value="CA">California</option>
-											<option value="CO">Colorado</option>
-											<option value="CT">Connecticut</option>
-											<option value="DE">Delaware</option>
-											<option value="DC">District of Columbia</option>
-											<option value="FL">Florida</option>
-											<option value="GA">Georgia</option>
-											<option value="HI">Hawaii</option>
-											<option value="ID">Idaho</option>
-											<option value="IL">Illinois</option>
-											<option value="IN">Indiana</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-											<option value="LA">Louisiana</option>
-											<option value="ME">Maine</option>
-											<option value="MD">Maryland</option>
-											<option value="MA">Massachusetts</option>
-											<option value="MI">Michigan</option>
-											<option value="MN">Minnesota</option>
-											<option value="MS">Mississippi</option>
-											<option value="MO">Missouri</option>
-											<option value="MT">Montana</option>
-											<option value="NE">Nebraska</option>
-											<option value="NV">Nevada</option>
-											<option value="NH">New Hampshire</option>
-											<option value="NJ">New Jersey</option>
-											<option value="NM">New Mexico</option>
-											<option value="NY">New York</option>
-											<option value="NC">North Carolina</option>
-											<option value="ND">North Dakota</option>
-											<option value="OH">Ohio</option>
-											<option value="OK">Oklahoma</option>
-											<option value="OR">Oregon</option>
-											<option value="PA">Pennsylvania</option>
-											<option value="RI">Rhode Island</option>
-											<option value="SC">South Carolina</option>
-											<option value="SD">South Dakota</option>
-											<option value="TN">Tennessee</option>
-											<option value="TX">Texas</option>
-											<option value="UT">Utah</option>
-											<option value="VT">Vermont</option>
-											<option value="VA">Virginia</option>
-											<option value="WA">Washington</option>
-											<option value="WV">West Virginia</option>
-											<option value="WI">Wisconsin</option>
-											<option value="WY">Wyoming</option>
-										</select>									
-									</li>
-									
-									<li>
-										<label for="zipcode">Zipcode</label>
-										<input class="small" type="text" name="zipcode" id="zipcode" />
-									</li>									
-									
-								</ul>
-							</fieldset>
 							
 							<fieldset class="collapsed">
 								<legend>Departments</legend>
 								
 								<ul>
 									<li class="checkboxes two-cols">
-										<label><input type="checkbox" name="department" value="test1" /> Department 1</label>
-										<label><input type="checkbox" name="department" value="test2" /> Department 2</label>
-										<label><input type="checkbox" name="department" value="test3" /> Department 3</label>
-										<label><input type="checkbox" name="department" value="test4" /> Department 4</label>
-										<label><input type="checkbox" name="department" value="test5" /> Department 5</label>
-										<label><input type="checkbox" name="department" value="test1" /> Department 6</label>
-										<label><input type="checkbox" name="department" value="test2" /> Department 7</label>
-										<label><input type="checkbox" name="department" value="test3" /> Department 8</label>
-										<label><input type="checkbox" name="department" value="test4" /> Department 9</label>
+										<label class="checked"><input type="checkbox" name="department" value="test1" checked /> Athletes</label>
+										<label><input type="checkbox" name="department" value="test2" /> Coaching</label>
+										<label><input type="checkbox" name="department" value="test3" /> Training</label>
+										<label><input type="checkbox" name="department" value="test4" /> Equipment Management</label>
+										<label><input type="checkbox" name="department" value="test5" /> Administration</label>
+										<label><input type="checkbox" name="department" value="test1" /> Facilities</label>
+										<label class="checked"><input type="checkbox" name="department" value="test2" checked /> IT</label>
+										<label><input type="checkbox" name="department" value="test3" /> Concessions</label>
+										<label class="checked"><input type="checkbox" name="department" value="test4" checked /> Security</label>
 									</li>
 								</ul>
 								

@@ -88,12 +88,56 @@
 		
 		
 		
-		<div id="main-container" class="clear-fix">
+		<div id="main-container" class="rightbar clear-fix">
 		
 			<div class="wrapper">
+			
+				<div class="right-bar">
+					
+					<ul class="controls">
+						<li><button type="submit" class="save-button">Save</button></li>
+						<li><a class="delete-button" href="#">Delete Employee</a></li>
+					</ul>
+					
+					
+					<div class="notes">
+						<hgroup class="clear-fix">
+							<a class="add" href="">+ Add</a>
+							<h3>Notes</h3>
+						</hgroup>
+						
+						<form name="addNote" id="add-note" class="clear-fix" method="post" action="#">
+							<textarea name="newNote" id="newNote"></textarea>
+							<button type="submit" id="add-note-submit">Save Note</button>
+						</form>
+						
+						<ul>
+							<li>
+								Set to active since he's back from vacation and working again.
+								<small>tysonwilley - 08/02/2011</small>
+							</li>
+							<li>
+								Set to inactive
+								<small>lcamilo - 07/31/2011</small>
+							</li>
+							<li>
+								Added him to the IT Department
+								<small>zachs - 07/25/2011</small>
+							</li>
+							<li>
+								Updated Last Name.
+								<small>tysonwilley - 07/21/2011</small>
+							</li>
+							<li>
+								Employee Created
+								<small>wscheuer - 07/20/2011</small>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
 				
-				<div class="body">			
-				
+				<div class="body">
 						
 						<hgroup>
 							<h1>Edit Employee</h1>
@@ -367,6 +411,21 @@
 						$(this).parent().removeClass("checked");
 					}
 				});
+				
+				$(".notes").find("a.add").bind("click", function (){
+					if ($(this).html() === "+ Add") {
+						$("#add-note").slideDown("fast");
+						$(this).html("- Cancel");
+					} else {
+						$("#add-note").slideUp("fast");
+						$(this).html("+ Add");
+					}
+					
+					return false;
+				});
+
+				
+				
 			})(jQuery);			
 		</script>
 		

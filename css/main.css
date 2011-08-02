@@ -11,7 +11,7 @@ html, body {
 	z-index: 0;
 }
 
-header, hgroup, nav, div, p, h1, h2, h3, h4, h5, h6, form, fieldset, section, article {
+header, hgroup, nav, div, p, h1, h2, h3, h4, h5, h6, form, textarea, fieldset, section, article {
 	background: none;
 	border: none;
 	display: block;
@@ -72,6 +72,24 @@ button {cursor: pointer;}
 .float-right {
 	display: block;
 	float: right;
+}
+
+.save-button {
+	background: #2575b9;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 7px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.save-button:hover {
+	background: #408fd2;
 }
 
 
@@ -276,13 +294,22 @@ header nav ul > li:hover > ul {
 	position: relative;
 }
 
-#main-container.sidebar {
+#main-container.leftbar {
 	background: url(../images/bg-leftCol.png) repeat-y #f5f5f5 center 0
 }
 
-#main-container.sidebar .body {
+#main-container.rightbar {
+	background: url(../images/bg-rightCol.png) repeat-y #f5f5f5 center 0
+}
+
+#main-container.leftbar .body {
 	float: left;
 	width: 705px;
+}
+
+#main-container.rightbar .body {
+	float: left;
+	width: 770px;
 }
 
 #left-col { 
@@ -345,6 +372,114 @@ header nav ul > li:hover > ul {
 	color: #333; 
 	font-weight: bold; 
 }
+
+
+
+.right-bar {
+	float: right;
+	margin-left: 20px;
+	width: 130px;
+}
+
+.right-bar .controls {
+	padding: 30px 0;
+}
+
+.right-bar .controls li { margin: 0 0 15px;}
+
+.right-bar .controls .save-button {
+	padding: 7px 10px;
+	width: 100%;
+}
+
+.right-bar .controls .delete-button {
+	border-width: 1px;
+	border-style: solid;
+	display: block;
+	padding: 7px 0;
+	text-align: center;
+	width: 100%;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+.right-bar .notes {
+	margin: 0 0 30px;
+}
+
+.right-bar .notes hgroup {
+	border-bottom: 1px solid #999;
+	padding: 0 0 5px;
+	margin: 0;
+}
+
+.right-bar .notes a.add {
+	color: #2575b9;
+	display: block;
+	float: right;
+	font-size: 11px;
+}
+
+.right-bar .notes a.add:hover { 
+	color: #408FD2; 
+}
+
+.right-bar .notes h3 {
+	color: #666;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.right-bar .notes ul {}
+
+.right-bar .notes li {
+	border-bottom: 1px solid #ebebeb;
+	color: #666;
+	font-size: 11px;
+	padding: 5px 0;
+}
+
+.right-bar .notes small {
+	color: #bbb;
+	display: block;
+	font-style: italic;
+}
+
+.right-bar .notes form {
+	display: none;
+	margin: 5px 0;
+}
+
+.right-bar .notes textarea {
+	border: 1px solid #dcdcdc;
+	font-size: 11px;
+	height: 65px;
+	margin: 5px 0 2px;
+	padding: 5px;
+	width: 120px;
+	
+	border-radius: 6px;
+}
+
+.right-bar .notes button {
+	background: #f5f5f5;
+	border: 1px solid #dcdcdc;
+	color: #666;
+	font-size: 11px;
+	padding: 4px;
+	width: 100%;
+	
+	border-radius: 4px;
+}
+
+.right-bar .notes button:hover {
+	border-color: #bbb;
+}
+
 
 .item-list {
 	margin: 0 0 30px;
@@ -592,11 +727,13 @@ input[type="email"]:focus {
 	border-bottom-right-radius: 6px;
 }
 
-#delete-button a {
+#delete-button a,
+.delete-button {
 	color: #d11e00;
 }
 
-#delete-button:hover {
+#delete-button:hover,
+.delete-button:hover {
 	border-color: #e4a99f;
 }
 
@@ -927,24 +1064,12 @@ input[type="email"]:focus {
 	margin-left: 150px;
 }
 
-.save-button {
-	background: #2575b9;
-	border: none;
-	color: #fff;
-	font-weight: bold;
+.body form.standard-form .form-controls .save-button {	
 	min-width: 150px;
-	padding: 7px 30px;
-	text-align: center;
-	text-transform: uppercase;
-	
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+	padding: 7px 30px;	
 }
 
-.save-button:hover {
-	background: #408fd2;
-}
+
 
 
 
